@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300&display=swap');
+html,body{
+    height: 100%;
+    width: 100%;
+
+    color: #222;
+
+
+
+}
+ /* Navigation Bar*/
+.main-nav{
+  display:flex;
+  list-style:none;
+  font-size:1.5em;
+  margin:0;
+justify-content: center;
+overflow: hidden;
+padding: 2px 20px;
+
+
+}
+.navbar{
+  text-decoration: none;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  background-color: black;
+}
+.navbar strong{
+  font-size: 30px;
+  color: white;
+
+}
+
+
+@media only screen and (max-width:850px){
+  .main-nav{
+    font-size: 0.5em;
+    padding: 0px;
+  }
+}
+li{
+  padding: 20px;
+
+
+
+}
+
+
+
+/* Home Page */
+.home{
+  padding-top: 80px;
+}
+.home img{
+  width: 100%;
+   height: 90vh;
+}
+.heading{
+position: absolute;
+
+  text-align: center;
+   top: 50%;
+
+}
+.h1{
+  padding: 20px;
+  text-align: center;
+  font-size: 400%;
+   text-transform: uppercase;
+   text-shadow: 1px 1px 4px #FFFFFF;
+
+
+}
+.h3{
+  padding: 20px;
+  text-align: center;
+  font-size: 200%;
+    font-weight: 500;
+ text-shadow: 1px 1px 4px #FFFFFF;
+    padding-bottom: 1rem;
+
+}
+
+.button:hover{
+  background-color: yellow;
+}
+/* Welcome section */
+.welcome-section{
+  max-width: 900px;
+    width: 100%;
+    margin: auto;
+}
+ h2{
+  display: flex;
+    justify-content: center;
+    font-size: 50px;
+   padding-top: 20px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+    padding: 40px;
+  }
+.content .umbrella{
+  width: 200px;
+  height: 200px;
+}
+
+.columns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin:15px 80px;
+}
+.column {
+    flex: 1;
+    margin: 2px;
+    padding: 10px ;
+    transition: 0.3s;
+}
+.column h4{
+    font-size: 20px;
+    color:#222 ;
+}
+.column p{
+    font-size: 15px;
+}
+.column .btn{
+    font-size: 20px ;
+}
+.column .btn:hover{
+    background-color: #800080;
+    border: 1px solid #800080;
+    color: #000;
+}
+#font{
+  font-size: 50px;
+  width: auto;
+  height: auto;
+padding-left: 50px;
+}
+/*Project Section*/
+.title{
+  text-align: center;
+  font-size: 50px;
+  font-family: monospace;
+font-weight: 600px;
+}
+#project_section{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+.card{
+  width: 300px;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px 35px;
+}
+.card-img-top{
+  width: 300px;
+  height: 1000px;
+}
+.card:hover{
+    background-color:#ffff56;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.1s ease;
+}
+
+/* Price Section */
+.price-container{
+  display: flex;
+  justify-content: center;
+  flex-direction:wrap;
+}
+.price-container .plan{
+    text-align: center;
+}
+.price-container h4{
+    font-size: 20px;
+    margin: 19px 34px;
+}
+.price-container p{
+    font-size: 15px;
+    margin: 19px 34px;
+}
+.price-container .plan .btn{
+    font-size: 20px;
+    background-color: #8F00FF;
+}
+.price-container .plan .btn:hover{
+    background-color: #f8f837;
+    border: 1px solid #fff075;
+    color: black;
+}
+
+/* video Section */
+
+.videoProjects {
+  text-align: center;
+  color: rgb(116, 116, 116);
+    background-color: #533899e7;
+    margin-top: 45px;
+      height: 530px;
+}
+.videos {
+  display: flex;
+  overflow: hidden;
+}
+.video {
+  padding: 20px;
+}
+.videoProjects h1 {
+  color: #fff;
+  padding: 45px;
+}
+
+/* Team */
+.Team{
+    height:650px;
+}
+.team-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.team-zone{
+    text-align: center;
+    padding:2rem;
+    font-size: 2.2rem;
+}
+.team{
+    width:200px;
+
+    transition: transform .4s linear;
+    box-shadow: 0 3px 10px rgb(0 ,0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 20px;
+}
+.team:hover{
+   transform: scale(1.05);
+}
+.team img{
+    width: 120px;
+    height: 150px;
+    border-radius: 100px;
+    margin: 0.7rem;
+
+}
+.team-container .team .i{
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+.team-container .team .i:hover{
+    opacity: 1;
+    padding:0.3rem;
+}
+.team-container .team .i i{
+    padding:1rem;
+}
+.tit {
+   padding: 2rem;
+   text-align: center;
+   font-size: 2.2rem;
+}
+/*Lyf in zippy*/
+.pics{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+img{
+  width:450px;
+  height:300px;
+  margin:10px;
+  transition: all 1s;
+}
+
+/*NewsLetter*/
+.news-letter{
+  margin: 0;
+  padding: 0;
+ background-image: url(image/news-1.jfif);
+ background-size: 100%;
+
+
+ }
+
+ .newsletter_section_heading{
+ padding-top:4%;
+ padding-bottom: 2%;
+ color: white;
+ text-shadow: 2px 2px 2px black;
+ 
+ }
+
+ .newsletter_form_combined{
+ width: 45%;
+ margin: 0 auto;
+
+ }
+ .newsletter_button{
+ background-color:#fced62;
+ font-weight: 900;
+ font-family: Montserrat;
+ width: 22%;
+
+ }
+ .newsletter_button:hover{
+ background-color:#72147e;
+ color: white;
+ }
+ /* blog section*/
+
+
+ #blog img{
+
+   height: 15rem;
+   width: 20rem;
+ }
+ #blog button{
+   font-size: 15px;
+   margin: 0 108px;
+   margin-bottom: 12px;
+   text-align: center;
+ }
+ #blog button:hover{
+     background: #fed330;
+     border: 1px solid #fff075;
+     color: #000;
+ }
+
+ /* Contact Section
+ */
+  .maps-container{
+  padding: 3% 0%;
+}
+.maps-row1{
+  padding: 0%;
+}
+.maps-row2{
+  padding:2px 5px;
+  text-align: left;
+  background-color: #FFE05D;
+
+}
+
+
+  /* Footer Section  */
+  footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #fdfdfd;
+    text-align: center;
+    justify-content: center;
+}
+footer .container{
+   display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+}
+ .social{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+
+
+}
+.copyrightText p{
+    width: 100%;
+    background: #faf7f7;
+    padding: 8px 100px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 0;
+    font-size: 20px;
+}
